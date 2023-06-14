@@ -1,0 +1,16 @@
+body {
+    margin: 100px;
+    padding: 100px;
+}
+#scoreContainer{
+    font-size:100px;
+    color: firebrick;
+    
+    
+}
+#maxScore {
+    height: 30px;
+    width:100px ;
+    color: green;
+font-size: xx-large;
+}
