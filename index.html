@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Keeper score</h1>
     
-    <div>
+    <div id="tableau">
+        <h1>Keeper score</h1>
         <div class="scoreContainer">
             <span id="current-score1">0</span>
             <input type="button" value="player1" id="playerBtn1">
@@ -21,8 +21,8 @@
             <input type="button" value="player2" id="playerBtn2">
         </div>    
 
-        <h3> Playing to : <span class="newMaxScore">0</span> </h3>
-        <input type="number" id="max-score"  value ="10" max="10" min="1">
+        <h3> Playing to : <span id="newMaxScore">0</span> </h3>
+        <input type="number" id="max-score">
         <input type="reset" value="reset" id="resetBtn">
 
         
