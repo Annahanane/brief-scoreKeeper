@@ -1,29 +1,29 @@
 "use strict";
 
-// Récupération des scores de chaque joueur
+ // Récupération des scores de chaque joueur
 const currentScore1 = document.getElementById("current-score1");
 const currentScore2 = document.getElementById("current-score2");
 
-// Récupération des boutons de chaque joueur
+ // Récupération des boutons de chaque joueur
 const player1 = document.getElementById("playerBtn1");
 const player2 = document.getElementById("playerBtn2");
 
-// Récupération du score limite pour réinitialiser
+ // Récupération du score limite pour réinitialiser
 const maxScoreItem = document.getElementById("max-score");
-const newMaxScore = document.getElementsByClassName("newMaxScore");
+const newMaxScore = document.getElementById("newMaxScore");
 
-// Récupération du bouton de réinitialisation
+ // Récupération du bouton de réinitialisation
 const reset = document.getElementById("resetBtn");
 
-//Le score affiché
+ //Le score affiché
 let maxScore = parseInt(maxScoreItem.value);
 
  // Afficher le nouveau score-max
-  maxScoreItem.addEventListener("change",() => {
-     newScoreMax.textContent = maxScoreItem.value;
-  });
+maxScoreItem.addEventListener("change",() => {
+    newMaxScore.textContent = maxScoreItem.value;
+});
 
-// Afficher le score du  joueur 1
+ // Afficher le score du  joueur 1
 let score1 = 0;
 player1.addEventListener("click", () => {
   score1++;
@@ -33,7 +33,7 @@ player1.addEventListener("click", () => {
   }
 });
 
-// Afficher le score du joueur 1
+ // Afficher le score du joueur 1
 let score2 = 0;
 player2.addEventListener("click", () => {
   score2++;
@@ -45,12 +45,7 @@ player2.addEventListener("click", () => {
 
  // Réinitialiser le score à 0
 reset.addEventListener("click", () => {
-
+  location.reload(true);
  
-  currentScore1.textContent = 0;
-  currentScore1.style.color = "red";
-  currentScore2.textContent = 0;
-  currentScore2.style.color = "red";
-  maxScoreItem.value++;
-
+  
 });
