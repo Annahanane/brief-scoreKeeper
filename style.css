@@ -2,9 +2,10 @@ body {
     margin: 100px;
     padding: 100px;
 }
-#scoreContainer{
+.scoreContainer{
     font-size:100px;
-    color: firebrick;
+    color: red;
+    
     
     
 }
