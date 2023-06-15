@@ -2,13 +2,22 @@ body {
     margin: 100px;
     padding: 100px;
 }
+#tableau{
+    background-color: bisque;
+    padding: 50px;
+    border-radius: 15px;
+}
 .scoreContainer{
     font-size:100px;
     color: red;
     
     
-    
 }
+#newMaxScore {
+    font-size: 50px;
+    color: green;
+}  
+
 #maxScore {
     height: 30px;
     width:100px ;
